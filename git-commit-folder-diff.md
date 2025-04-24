@@ -52,8 +52,9 @@ git worktree remove ..\v1
 git worktree remove ..\v2
 ```
 
-in my case, step 2 did not work, because it looks like no difference. Therefore, I use another tool: meld (if needed, download this https://gnome.pages.gitlab.gnome.org/meld/)
+in my case, step 2 did not work, because it looks like no difference. Therefore, I use another tool: meld (if needed, download this https://gnome.pages.gitlab.gnome.org/meld/).
+After installing meld, remember to re-open the cmd
 ```cmd
-:: Step 2: Compare specific folders using VSCode
+:: Step 2: Compare specific folders using meld
 meld "..\v1\src\legacy components" "..\v2\src\modern ui"
 ```
