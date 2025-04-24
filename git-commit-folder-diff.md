@@ -1,6 +1,6 @@
 # git-commit-folder-diff
 
-This project demonstrates how to compare folders across two different Git commits — even when the folder paths or structures have changed — using tools like Git Worktree, Visual Studio Code, Windows Command Prompt, and meld.
+This document demonstrates how to compare folders across two different Git commits — even when the folder paths or structures have changed — using tools like Git Worktree, Visual Studio Code, Windows Command Prompt, and meld.
 
 ## Use Case
 
