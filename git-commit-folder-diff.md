@@ -38,7 +38,8 @@ You want to:
 
 
 ## Example: Compare Folder Across Commits
-Please run this comment in the root folder and we will copy the targeted folder outside the git folder. Therefore, we set  ..\
+
+Run this command from the root of the repository. We're copying the target folder outside of the Git directory, so we use ..\\ to reference the parent directory.
 ```cmd
 :: Step 1: Add worktrees from two commits
 git worktree add ..\v1 abc1234
