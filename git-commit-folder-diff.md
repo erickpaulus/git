@@ -9,15 +9,13 @@ You want to:
 - Handle scenarios where folders were **renamed**, **moved**, or **restructured**
 - View a full **side-by-side diff of all files**, even if they exist at different paths or commit histories
 
----
+
 ## Tools Used
 - Git Worktree — for checking out multiple commits
 - Visual Studio Code — for side-by-side diffing with code --diff
 - Windows Command Prompt (cmd)
 - Meld
 
-Beyond Compare
----
 ## Folder Structure
 ```bash
 /
@@ -29,14 +27,15 @@ Beyond Compare
 │       └── modern ui/
 ├── README.md
 ```
-## 🚀 How It Works
+
+## How It Works
 
 1. Use `git worktree` to checkout two commits into temporary folders (`v1` and `v2`)
 2. Locate the folders you want to compare from each commit
-3. Use VSCode or another diff tool to compare the folders visually
+3. Use VSCode or another diff tool (meld) to compare the folders visually
 4. Clean up the temporary folders when finished
 
----
+
 
 ## 🛠 Example: Compare Folder Across Commits
 
@@ -51,3 +50,10 @@ code --diff "..\v1\src\legacy components" "..\v2\src\modern ui"
 :: Step 3: Clean up
 git worktree remove ..\v1
 git worktree remove ..\v2
+```
+
+in my case, step 2 did not work, because it looks like no difference. Therefore, I use another tool: meld (if needed, download this https://gnome.pages.gitlab.gnome.org/meld/)
+```cmd
+:: Step 2: Compare specific folders using VSCode
+meld "..\v1\src\legacy components" "..\v2\src\modern ui"
+```
