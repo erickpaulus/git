@@ -14,7 +14,7 @@ You want to:
 - Git Worktree — for checking out multiple commits
 - Visual Studio Code — for side-by-side diffing with code --diff
 - Windows Command Prompt (cmd)
-- Meld
+- Meld — for side-by-side diffing with meld
 
 ## Folder Structure
 ```bash
