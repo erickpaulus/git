@@ -37,8 +37,8 @@ You want to:
 
 
 
-## 🛠 Example: Compare Folder Across Commits
-
+## Example: Compare Folder Across Commits
+Please run this comment in the root folder and we will copy the targeted folder outside the git folder. Therefore, we set  ..\
 ```cmd
 :: Step 1: Add worktrees from two commits
 git worktree add ..\v1 abc1234
@@ -52,8 +52,8 @@ git worktree remove ..\v1
 git worktree remove ..\v2
 ```
 
-in my case, step 2 did not work, because it looks like no difference. Therefore, I use another tool: meld (if needed, download this https://gnome.pages.gitlab.gnome.org/meld/).
-After installing meld, remember to re-open the cmd
+in my case, step 2 did not work, because it looks like no difference. Therefore, I use another tool: Meld (if needed, download this https://gnome.pages.gitlab.gnome.org/meld/).
+After installing Meld, remember to re-open the cmd
 ```cmd
 :: Step 2: Compare specific folders using meld
 meld "..\v1\src\legacy components" "..\v2\src\modern ui"
