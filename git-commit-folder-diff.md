@@ -10,7 +10,15 @@ You want to:
 - View a full **side-by-side diff of all files**, even if they exist at different paths or commit histories
 
 ---
+## Tools Used
+- Git Worktree — for checking out multiple commits
+- Visual Studio Code — for side-by-side diffing with code --diff
+- Windows Command Prompt (cmd)
+- Meld
 
+Beyond Compare
+---
+## Folder Structure
 ```bash
 /
 ├── v1/                  ← Checked-out commit A
